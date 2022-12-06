@@ -1,5 +1,5 @@
 class Trip < ApplicationRecord
-  CONTINENTS = ["Africa", "Antartica", "Asia", "Australasia", "Europe", "North America", "South America"]
+  CONTINENTS = ["Africa", "Antarctica", "Asia", "Australasia", "Europe", "North America", "South America"]
   has_many :trip_reservations, dependent: :destroy
 
   validates :name, presence: true, uniqueness: true
