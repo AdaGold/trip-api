@@ -30,7 +30,7 @@ class Trip(db.Model):
         trip_info = {
             "id": self.id,
             "name": self.name,
-            "continent": self.continent,
+            "continent": self.continent.value,
             "category": self.category,
             "weeks": self.weeks,
             "cost": self.cost
