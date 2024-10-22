@@ -48,6 +48,10 @@ def get_trip_by_id(trip_id):
 def create_trip():
     trip_data = request.json
 
+    if not trip_data.get("name"):
+        response = {"message": "Missing name field"}
+        abort(make_response(response, 400))
+
     try:
         cost = validate_numeric_attr(trip_data["cost"], "cost")  
         weeks = validate_numeric_attr(trip_data["weeks"], "weeks")
