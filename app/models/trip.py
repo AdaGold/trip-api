@@ -21,9 +21,6 @@ class Trip(db.Model):
     category: Mapped[str]
     weeks: Mapped[int]
     cost: Mapped[float]
-    # available: Mapped[int]
-    # sold: Mapped[int]
-    # expires: Mapped[datetime]
     reservations: Mapped[list["Reservation"]] = relationship(back_populates="trip")
 
     def to_dict(self):
