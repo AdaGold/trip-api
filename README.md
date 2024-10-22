@@ -11,10 +11,10 @@ Read the API documentation for more details.
 ## Actions
 
 ### Retrieve list of all Trip packages
-`get` `https://trektravel.herokuapp.com/trips`
+`get` `https://trektravel.onrender.com/trips`
 
 ### Retrieve list of all Trips by continent
-`get` `https://trektravel.herokuapp.com/trips/continent?query={continent}`
+`get` `https://trektravel.onrender.com/trips/continent?query={continent}`
 
 Accepted query params:
 - `query` (string), represents the continent of the trip results to filter by
@@ -22,7 +22,7 @@ Accepted query params:
     - Must be one of the following values: `"Africa"`, `"Antarctica"`, `"Asia"`, `"Australasia"`, `"Europe"`, `"North America"`, `"South America"`
 
 ### Retrieve list of all Trips by max amount of weeks
-`get` `https://trektravel.herokuapp.com/trips/weeks?query={weeks}`
+`get` `https://trektravel.onrender.com/trips/weeks?query={weeks}`
 
 Accepted query params:
 - `query` (string), represents the max duration of the trips to filter by, in weeks
@@ -30,7 +30,7 @@ Accepted query params:
     - Must be a number
 
 ### Retrieve list of all Trips by max budget
-`get` `https://trektravel.herokuapp.com/trips/budget?query={budget}`
+`get` `https://trektravel.onrender.com/trips/budget?query={budget}`
 
 Accepted query params:
 - `query` (string), represents the max budget of the trips to filter by, in whole dollar amount
@@ -39,13 +39,13 @@ Accepted query params:
     - budget is in dollar amount, above represents $5,000
 
 ### Retrieve Data on Single Trip From ID
-`get` `https://trektravel.herokuapp.com/trips/{id}`
+`get` `https://trektravel.onrender.com/trips/{id}`
 
 ### Retrieve all reservations of a Trip
-`get` `https://trektravel.herokuapp.com/trips/{id}/reservations`
+`get` `https://trektravel.onrender.com/trips/{id}/reservations`
 
 ### Add a New Trip package to be listed
-`post` `https://trektravel.herokuapp.com/trips`
+`post` `https://trektravel.onrender.com/trips`
 
 Accepted query params:
 - `name` (string), represents the name of your trip
@@ -65,7 +65,7 @@ Accepted query params:
   - Must be a number
 
 ### Reserve a Ticket on a Trip package
-`post` `https://trektravel.herokuapp.com/trips/{trip id}/reservations`
+`post` `https://trektravel.onrender.com/trips/{trip id}/reservations`
 
 Accepted query params:
 - `name` (string), represents the name of the primary traveler on the trip reservation
